@@ -1,19 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
+
+{% block content %}
 
 <head>
-    <meta charset="utf-8">
-    <title>My Portfolio</title>
+    <title>Alyssa Miles - Portfolio</title>
 </head>
 
-<body style="background-color: darkslategray;">
-    <section class="section" style="align-items: center; display: table; margin-right: auto; margin-left: auto; margin-top: 0.25em; width: 65%;">
-        <div class="container" style="background-color: lavenderblush; padding: 8px; border-radius: 1em; border-color: black; border-width: 0.25em; border-style: solid;">
-            <div class="title" style="text-align: center; margin-top: 0px;"><h1>Alyssa Miles</h1></div>
+<div id="landing-header">
+    <div class="left link-bar">
+        <a href="" id="tl-link" class="fancy-link">About</a>
+        <a href="" id="bl-link" class="fancy-link">Portfolio</a>
+    </div>
 
-            <p>Init</p>
+    <div class="landing-logo"><img id="logo-img" src="/logo-invert.png" width="575px"></div>
+
+    <div class="right link-bar">
+        <a href="" id="tr-link" class="fancy-link">Interests</a>
+        <a href="" id="br-link" class="fancy-link">Contact</a>
+    </div>
+</div>
+
+<div id="landing-body">
+    <div class="content-paragraph">
+        <p>
+            My name is Alyssa Miles, known through my art as <a class="fancy-link" href="/portfolio">[A2]</a>. I am a multi-disciplinary artist focused mainly on Music & Programming, with experience in Animation, traditional / digital Art, and Voice Work.
+        </p>
+        <p>
+            I have particular passions for Experimental Music, Systems Design, UI/UX Design, Game/Project Design, and Rig-based Animation. Creative work is the most important thing in my life, allowing an outlet for my emotions, feelings, and the ability to create unique stories & messages that people of all kinds can enjoy & find meaning in.
+        </p>
+    </div>
+
+    <div class="marquee-header" data-text="Quick Portfolio" data-width="376">
+        <div class="marquee-content">
+            <svg width="100000000vw" id="background-svg">
+                <defs>
+                    <pattern id="pattern" x="0" y="0" width="376" height="52" fill="gray" patternUnits="userSpaceOnUse">
+                        <text x="0" y="38" id="background-text" style="font-size: 36px; font-style: italic;">Quick Portfolio</text>
+                    </pattern>
+                </defs>
+                <rect id="background-rect" x="0" y="0" width="100%" height="37%" fill="url(#pattern)"/>
+            </svg>
         </div>
-    </section>
-</body>
 
-</html>
+        <h1> Quick Portfolio </h1>
+    </div>
+
+    <h2> Albums </h2>
+
+    <div id="landing-music-promo">
+        <div class="bandcamp-player left"><iframe style="border: 0; width: 400px; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=3286463478/size=large/bgcol=ffffff/linkcol=000000/artwork=small/transparent=true/" seamless><a href="https://a2345.bandcamp.com/album/music-from-the-mind-of-someone">Music From The Mind Of Someone by [A2]</a></iframe> </div>
+        <div class="bandcamp-player right"><iframe style="border: 0; width: 400px; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=455259711/size=large/bgcol=ffffff/linkcol=000000/artwork=small/transparent=true/" seamless><a href="https://a2345.bandcamp.com/album/many-ambient-genres">Many Ambient Genres by [A2]</a></iframe> </div>
+    </div>
+
+    <h2> Programming </h2> 
+
+    <div id="landing-coding-promo">
+        <div class="landing-repo" style="grid-area: left;">
+            <a class="fancy-link" href="https://github.com/alyssamiles/alyssamiles.github.io">This Site</a>
+            <section>Portfolio Website created for Music Industry &amp; Portfolio class final project / personal use.</section>
+        </div>
+
+        <div class="landing-repo" style="grid-area: mid;">
+            <a class="fancy-link" href="https://github.com/A2source/A2source.github.io">Personal Site</a>
+            <section>Personal website developed for fun &amp; to show off my creativity.</section>
+        </div>
+
+        <div class="landing-repo" style="grid-area: right;">
+            <a class="fancy-link" href="https://github.com/A2source/Py-Mania">Py-Mania</a>
+            <section>Open-source rhythm game developed in python. High-School Grade 11 CS final project.</section>
+        </div>
+
+        <div class="landing-repo" style="grid-area: bleft;">
+            <a class="fancy-link" href="https://github.com/A2source/Drama-Interactive-Script">Drama Interactive Script</a>
+            <section>Drama tech sound cue app developed during my last year of High. No longer in development, not finished.</section>
+        </div>
+
+        <div class="landing-repo" style="grid-area: bmid;">
+            <a class="fancy-link" href="https://github.com/A2source/Drama-Interactive-Script-Legacy">Drama Interactive Script Legacy</a>
+            <section>Version 1 of my drama tech app. Developed in python with custom ui, fully working.</section>
+        </div>
+
+        <div class="landing-repo" style="grid-area: bright;">
+            <a class="fancy-link" href="https://github.com/A2source/time">TIME</a>
+            <section>Fully script-based 4-key rhythm game engine. Currently under active development.</section>
+        </div>
+    </div>
+
+</div>
+
+<script src="/landing.js"></script>
+
+{% endblock content %}
