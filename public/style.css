@@ -265,3 +265,51 @@ footer {
     color: white;
     background: black;
 }
+
+.footer-logo {
+    transform: scale(1, 1);
+    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.footer-logo:hover {
+    transform: scale(1.2, 1.2);
+    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#portfolio-youtube-embed {
+    display: grid;
+
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "left right";
+
+    height: 385px;
+
+    align-items: center;
+
+    align-content: center;
+}
+
+.youtube-playlist-div {
+    width: 100%;
+
+    text-align: center;
+}
+
+.youtube-playlist-div > h3 {
+    font-style: italic;
+    font-size: 24px;
+
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    border-bottom-style: dotted;
+
+    width: fit-content;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.youtube-playlist {
+    border-radius: 2em;
+}
