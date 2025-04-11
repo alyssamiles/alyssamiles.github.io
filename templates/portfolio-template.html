@@ -4,6 +4,17 @@
 
 <head>
     <title>Alyssa Miles - Portfolio</title>
+
+    <script>
+        function scrollToTop() 
+        {
+            setTimeout(() =>
+            {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }, 500);
+        }
+    </script>
 </head>
 
 <div style="padding-left: 24px; padding-top: 12px;"><a href="/" style="font-style: italic;"> go back </a></div>
@@ -49,7 +60,7 @@
         </div>
 
         <div class="youtube-playlist-div" style="grid-area: right">
-            <iframe class="youtube-playlist" width="500" height="285" src="https://www.youtube.com/embed/videoseries?si=ZAymVfbj-YHzt1-n&amp;list=PLzE10lTQw1HL0Q1pde-Oys0AI35KvGNgS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe onload="scrollToTop()" class="youtube-playlist" width="500" height="285" src="https://www.youtube.com/embed/videoseries?si=ZAymVfbj-YHzt1-n&amp;list=PLzE10lTQw1HL0Q1pde-Oys0AI35KvGNgS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <h3>Every Song I've Ever Worked On</h3>
         </div>
     </div>

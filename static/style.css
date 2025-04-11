@@ -3,6 +3,9 @@ html {
     overflow-x: hidden;
 
     cursor: default;
+
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 #landing-header {
@@ -31,6 +34,9 @@ html {
 p {
     font-size: 24px;
     line-height: 1.5em;
+}
+.big-font > p a {
+    font-size: 30px;
 }
 a {
     font-size: 24px;
@@ -312,4 +318,46 @@ footer {
 
 .youtube-playlist {
     border-radius: 2em;
+}
+
+#contact-grid {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+
+    width: 30em;
+}
+
+.fa-brands .fa-solid {
+    transform: scale(2, 2);
+}
+
+li {
+    margin-top: 12px;
+
+    padding: 12px 0px;
+}
+
+li > a {
+    text-decoration: none;
+    margin: 2em;
+    align-self: center;
+}
+
+#left-float {
+    float: left;
+    filter: drop-shadow(6px 6px 8px rgba(0, 0, 0, 0.5));
+}
+
+#right-float {
+    float: right;
+    filter: drop-shadow(6px 6px 8px rgba(0, 0, 0, 0.5));
+}
+
+.big-font {
+    font-size: 3em;
 }
